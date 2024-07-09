@@ -1,0 +1,28 @@
+
+@mixin btn{
+    font-size: 1.2rem;
+    font-weight: 800;
+    background: var(--btn-bg-color) !important;
+    &:hover {
+        color: var(--white);
+        background: linear-gradient(360deg, rgba(2, 46, 71, 0.877), rgba(4, 74, 121, 0.89), rgba(15, 114, 160, 0.932)) !important;
+        transition: all 0.5s;
+        transform: translateY(-0.4rem);
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+@mixin moveSliders($move, $seconds) {
+    animation: slider $seconds ease-in-out;
+    @keyframes slider {
+        from {
+            transform: scale(0) translateY($move);
+        }
+    
+        to {
+            transform: scale(1) translateY(0);
+        }
+    }
+}

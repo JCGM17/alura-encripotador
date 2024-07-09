@@ -1,0 +1,57 @@
+@keyframes imgSlider {
+    0% {
+        transform: scale(0) translateX(350px);
+    }
+
+    100% {
+        transform: scale(1) translateX(0);
+    }
+}
+
+@keyframes logoSlider {
+    0% {
+        transform: scale(0) translateX(-350px);
+    }
+
+    100% {
+        transform: scale(1) translateX(0);
+    }
+}
+
+@keyframes rotateInf {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(90deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes items {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes cambiar {
+    0% {
+        background-position: 0% -150%;
+    }
+
+    50% {
+        background-position: 150% 250%;
+    }
+
+    100% {
+        background-position: 0% -150%;
+    }
+}
